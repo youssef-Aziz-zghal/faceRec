@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/EnterEmailFragment"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+tools:context=".ui.PersonalDataInputActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:stateListAnimator="@null">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/toolbar_margin_horizontal"
+            android:background="@color/transparent"
+            android:layoutDirection="rtl" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<TextView
+    android:id="@+id/data_input_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:text="@string/data_input_step"
+    android:theme="@style/TextViewSubTitleStyle" />
+
+<TextView
+    android:id="@+id/data_input_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/data_input_step"
+    android:gravity="center_horizontal"
+    android:text="@string/data_input_title"
+    android:theme="@style/TextViewTitleStyle" />
+
+<ProgressBar
+    android:id="@+id/data_input_progress_bar"
+    style="@style/ProgressBarHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/progress_bar_height"
+    android:layout_below="@+id/data_input_title"
+    android:layout_marginHorizontal="@dimen/progress_bar_margin_horizontal"
+    android:visibility="invisible" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/data_input_phone_number_input_layout"
+    style="@style/NoUnderlineTextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text_input_height"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="@dimen/text_input_marginHorizontal"
+    android:hint="@string/data_input_hint_phone">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/data_input_phone_number_input"
+        style="@style/TextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:imeOptions="actionDone"
+        android:inputType="phone" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/data_input_first_name_input_layout"
+    style="@style/NoUnderlineTextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text_input_height"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="@dimen/text_input_marginHorizontal"
+    android:hint="@string/data_input_hint_first_name"
+    android:visibility="invisible">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/data_input_first_name_input"
+        style="@style/TextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/data_input_last_name_input_layout"
+    style="@style/NoUnderlineTextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text_input_height"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="@dimen/text_input_marginHorizontal"
+    android:hint="@string/data_input_hint_last_name"
+    android:visibility="invisible">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/data_input_last_name_input"
+        style="@style/TextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<TextView
+    android:id="@+id/data_input_error"
+    style="@style/TextViewErrorMessageStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/data_input_next"
+    android:lineSpacingExtra="@dimen/default_line_spacing_extra_short"
+    android:text="" />
+
+<Button
+    android:id="@+id/data_input_skip"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="@dimen/default_margin_horizontal"
+    android:layout_toStartOf="@id/data_input_next"
+    android:text="@string/data_input_skip_otp"
+    android:theme="@style/Button" />
+
+<Button
+    android:id="@+id/data_input_next"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="@dimen/default_margin_horizontal"
+    android:text="@string/confirm"
+    android:theme="@style/Button" />
+
+</RelativeLayout>
+

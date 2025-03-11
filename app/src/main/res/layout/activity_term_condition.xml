@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/validateTermsFragment"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+android:gravity="center"
+tools:context=".ui.TermConditionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:stateListAnimator="@null">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/toolbar_margin_horizontal"
+            android:background="@color/transparent"
+            android:layoutDirection="rtl" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<TextView
+    android:id="@+id/terms_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:text="@string/terms_step"
+    android:theme="@style/TextViewSubTitleStyle" />
+
+<TextView
+    android:id="@+id/terms_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/terms_step"
+    android:text="@string/terms_title"
+    android:theme="@style/TextViewTitleStyle" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/terms_next"
+    android:layout_below="@id/terms_title"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="@dimen/default_margin_horizontal"
+    android:gravity="center"
+    android:orientation="@integer/layout_orientation">
+
+    <View
+        android:id="@+id/terms_qr_code"
+        android:layout_width="@dimen/qr_code_size"
+        android:layout_height="@dimen/qr_code_size"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_qr_code" />
+
+    <TextView
+        android:id="@+id/terms_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:text="@string/terms_rule"
+        android:textAppearance="@style/TermsRule" />
+</LinearLayout>
+
+<Button
+    android:id="@+id/terms_next"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="@dimen/default_margin_horizontal"
+    android:text="@string/terms_next"
+    android:theme="@style/Button" />
+</RelativeLayout>

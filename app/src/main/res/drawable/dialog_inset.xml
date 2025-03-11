@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/dialog_background"
+    android:insetLeft="@dimen/inset_margin_default"
+    android:insetTop="@dimen/inset_margin_top"
+    android:insetRight="@dimen/inset_margin_default"
+    android:insetBottom="@dimen/inset_margin_default"></inset>

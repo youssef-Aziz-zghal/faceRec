@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Reference enrollment app</string>
+
+    <string name="confirm">Confirm</string>
+
+    <string name="WorkEnrollStart">Enrollment</string>
+    <string name="WorkUnEnrollStart">UnEnrollment</string>
+    <string name="EnrollOk">You have successfully been enrolled.</string>
+    <string name="auto_Start">Auto-Start</string>
+    <string name="menu_version">version</string>
+    <string name="menu_quit">Quit</string>
+    <string name="menu_un_enroll">Un-Enroll</string>
+
+    <string name="error_field_not_filled">Please fill in all fields</string>
+    <string name="error_phone_number_already_associated">The given phone number is already associated to a customer account.</string>
+    <string name="error_unknown_phone_number">The given phone number does not correspond to an existing customer account.</string>
+    <string name="toast_init_failed">Library initialization failed</string>
+    <string name="toast_select_tokenization_method">Please choose a tokenization method</string>
+
+    <string name="toast_cancel_capture_failed">Failed to cancel capture</string>
+    <string name="toast_cancel_capture_success">Cancel capture succeed</string>
+    <string name="toast_send_otp_success">OTP sent successfully</string>
+
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_retry">Retry</string>
+    <string name="dialog_abort">Abort</string>
+    <string name="dialog_message_failed_enrollment_verification">Enrollment failed because of a bad capture.</string>
+    <string name="dialog_title_confirm_un_enroll">Confirm Un-Enroll</string>
+    <string name="dialog_message_confirm_un_enroll">Hello %s,\nare you sure you want to un-enroll?\nThis action will remove your account\nand data from our system.\nPlease confirm if you\'d like to proceed.</string>
+    <string name="dialog_title_cancel">Cancel Process Confirmation</string>
+    <string name="dialog_title_terminate">Quit application</string>
+    <string name="dialog_message_terminate">Are you sure you want to exit?</string>
+    <string name="dialog_message_cancel">By clicking return to home screen,\nyou\'ll finalize the entire process,\nand it will reset to the beginning.</string>
+    <string name="dialog_title_retry_enrollment">Retry Enrollment</string>
+    <string name="dialog_message_capture_canceled">The capture failed because it was canceled.</string>
+    <string name="dialog_message_cancellation_ongoing">Cancellation ongoing…</string>
+
+    <string name="capture_guidance_un_enroll_processing">Un-enrollment is processing…</string>
+
+    <string name="guidance_static">Please move your hand</string>
+    <string name="guidance_place_hand">Please place your hand\nabove the sensor</string>
+    <string name="guidance_remove_hand">Remove your hand\nto continue</string>
+    <string name="guidance_hand_down">toward you</string>
+    <string name="guidance_hand_up">away from you</string>
+    <string name="guidance_hand_left">to the left</string>
+    <string name="guidance_hand_right">to the right</string>
+    <string name="guidance_hand_further">away from the sensor</string>
+    <string name="guidance_hand_closer">closer to the sensor</string>
+    <string name="guidance_flatten_hand">flat and parallel to the sensor</string>
+    <string name="guidance_dont_move">Don\'t move.</string>
+    <string name="guidance_complete">Processing data…\nYou can remove your hand</string>
+
+    <string name="init_next">Init</string>
+    <string name="init_title">Initialize Library</string>
+
+    <string-array name="first_name_list">
+        <item>John</item>
+        <item>Jane</item>
+        <item>Sam</item>
+        <item>Alice</item>
+        <item>Bob</item>
+    </string-array>
+    <string-array name="last_name_list">
+        <item>Doe</item>
+        <item>Smith</item>
+        <item>Johnson</item>
+        <item>Wilson</item>
+        <item>Brown</item>
+    </string-array>
+
+    <string name="idle_title">Palm Vein Payment</string>
+    <string name="idle_next">Tap to start</string>
+    <string name="welcome_title">Enroll yourself</string>
+    <string name="welcome_validate_terms_conditions">Validate terms\n&amp; conditions</string>
+    <string name="welcome_identify_yourself">Identify\nyourself</string>
+    <string name="welcome_your_payment_card">Store your\npayment card</string>
+    <string name="welcome_link_your_hand">Link your\nhand</string>
+    <string name="welcome_next">Board me in!</string>
+    <string name="terms_step">Step 1</string>
+    <string name="terms_rule">By clicking ‘I confirm’, I confirm I have read and I accept the terms and conditions available via the QR code on this screen.</string>
+    <string name="terms_next">I confirm</string>
+    <string name="terms_title">Validate terms &amp; conditions</string>
+    <string name="data_input_step">Step 2</string>
+    <string name="data_input_title">Identify yourself</string>
+    <string name="data_input_skip_otp">Skip OTP</string>
+    <string name="data_input_error_phone_number_invalid">Invalid phone number</string>
+    <string name="data_input_hint_phone">Phone number (in +countrycode********** format)</string>
+    <string name="data_input_hint_first_name">First name</string>
+    <string name="data_input_hint_last_name">Last name</string>
+    <string name="validate_otp_title">Please enter the OTP\nyour just received on your phone.</string>
+    <string name="validate_otp_resend_otp_available">Resend OTP</string>
+    <string name="validate_otp_resend_otp_unavailable">Resend OTP  %d s</string>
+    <string name="validate_otp_error">Failed to validate OTP. Please check again, or resend code.</string>
+    <string name="tokenization_step">Step 3</string>
+    <string name="tokenization_method_title">Choose the payment method\nyou want to tokenize</string>
+    <string name="tokenization_method_emv">EMV Card Tokenization</string>
+    <string name="tokenization_method_fidelity">Fidelity account</string>
+    <string name="emv_title">Insert or tap your card</string>
+    <string name="emv_step">Step 3</string>
+    <string name="emv_retry">Retry</string>
+    <string name="fidelity_title">Tap your fidelity account code</string>
+    <string name="fidelity_input">Fidelity code</string>
+    <string name="fidelity_next">Confirm fidelity code</string>
+    <string name="fidelity_fill_field">Please enter the Fidelity code</string>
+    <string name="result_title_enrollment_success">You\'re all set</string>
+    <string name="result_title_enrollment_duplicate">It looks like we already know you !\nYou are not enrolled</string>
+    <string name="result_title_enrollment_canceled">Enrollment canceled\nYou are not enrolled</string>
+    <string name="result_title_un_enrollment_success">You are un-enrolled</string>
+    <string name="result_title_un_enrollment_failure">No user matches this face or palm image\nYou are not un-enrolled</string>
+    <string name="result_title_un_enrollment_canceled">Un-enrollment canceled\nYou are not un-enrolled</string>
+    <string name="result_next">Back home</string>
+    <string name="un_enroll_title">Please select your preferred\nauthentication method</string>
+    <string name="un_enroll_step">Un-Enrollment</string>
+    <string name="un_enroll_pvp_auth">Palm Vein Authentication</string>
+    <string name="un_enroll_phone_auth">Phone Authentication</string>
+    <string name="enroll">Enroll</string>
+    <string name="un_enroll">Un-Enroll</string>
+    <string name="choose_enroll_un_enroll">Please choose: Enroll or Un-enroll</string>
+    <string name="understood">Understood</string>
+    <string name="accept">Accept</string>
+    <string name="term_condition">Terms and Conditions</string>
+    <string name="lorem_ipsum_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper, justo ut vestibulum tristique, massa ligula fermentum tellus, sed luctus ligula justo ut diam. Sed ultricies dapibus sapien, id facilisis libero venenatis vel. In hac habitasse platea dictumst. Fusce euismod aliquet massa, vitae ullamcorper elit elementum nec. Nunc euismod hendrerit odio vel euismod. Suspendisse potenti. Phasellus ut dolor vestibulum, bibendum felis vel, vestibulum mauris. Integer eget dapibus ex. Sed tincidunt augue vitae efficitur cursus. Proin consectetur quam nec dolor lacinia vestibulum. Nullam nec lectus a arcu fermentum convallis. Phasellus efficitur est eget justo iaculis, vel cursus tellus efficitur.
+    </string>
+    <string name="un_enroll_processing">Un-enrollment is processing…</string>
+    <string name="enrollment">enrollment</string>
+    <string name="un_enrollment">un-enrollment</string>
+    <string name="failed_capture_canceled">The capture failed because it was canceled.</string>
+    <string name="failed_capture_not_recognized">Capture failed because the hand was not recognized.</string>
+    <string name="un_enrollment_canceled">The un-enrollment process was aborted.</string>
+    <string name="alert_dialog_message">Sending data, please wait…</string>
+    <string name="step_success">Capture successful</string>
+
+    <string name="circle_1">1</string>
+    <string name="circle_2">2</string>
+    <string name="circle_3">3</string>
+    <string name="circle_4">4</string>
+    <string name="title_activity_term_condition">TermConditionActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="button_camera">Camera</string>
+    <string name="button_gallery">Gallery</string>
+    <string name="button_close">Close</string>
+    <string name="button_hq_off">HQ Off</string>
+    <string name="button_hq_on">HQ On</string>
+    <string name="enrollement_user_camera">Enrollement User</string>
+    <string name="cancel_detection_camera">Cancel Detection</string>
+    <string name="unerollment_user_camera">Unerollment user</string>
+    <string name="no_face_detected_camera">No face detected</string>
+    <string name="quality_too_low_center_your_face">Quality too low, center your face</string>
+    <string name="ready_to_save_face_embedding">Ready to save face embedding</string>
+    <string name="face_embedding_saved">Face embedding saved</string>
+    <string name="error_saving_face_embedding">Error saving face embedding</string>
+</resources>

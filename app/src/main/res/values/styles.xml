@@ -1,0 +1,149 @@
+<!--
+  ~ Copyright (c) 2017. http://hiteshsahu.com- All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ If you use or distribute this project then you MUST ADD A COPY OF LICENCE
+  ~ along with the project.
+  ~  Written by Hitesh Sahu <hiteshkrsahu@Gmail.com>, 2017.
+  -->
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:toolbarStyle">@style/NoElevationToolbar</item>
+        <item name="textAllCaps">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+    </style>
+
+    <style name="ConfirmDialogTheme">
+        <item name="android:windowBackground">@color/transparent_black</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NoElevationToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="navigationIcon">@drawable/ic_close</item>
+    </style>
+
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_dots</item>
+    </style>
+
+    <style name="NoUnderlineTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/kanit</item>
+        <item name="errorEnabled">true</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:background">@drawable/edittext_shape</item>
+        <item name="android:fontFamily">@font/kanit</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Button">
+        <item name="materialButtonStyle">@style/ButtonShape</item>
+    </style>
+
+    <style name="ButtonShape">
+        <item name="android:background">@drawable/button_disabled_selector</item>
+        <item name="android:fontFamily">@font/kanit</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonCancel">
+        <item name="materialButtonStyle">@style/ButtonCancelShape</item>
+    </style>
+
+    <style name="ButtonCancelShape">
+        <item name="android:background">@drawable/button_cancel_shape</item>
+        <item name="android:fontFamily">@font/kanit</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#130E0D</item>
+    </style>
+
+    <style name="TextViewTitleStyle">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">31sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra_short</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+    </style>
+
+    <style name="TextViewGuidanceStyle">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">31.5sp</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+    </style>
+
+    <style name="TextViewSubTitleStyle">
+        <item name="android:textColor">@color/sub_title</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:gravity">bottom|center</item>
+    </style>
+
+    <style name="TextViewMessageStyle">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra_short</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextViewErrorMessageStyle">
+        <item name="android:textColor">@color/error</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RadioGroup">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:buttonTint">@drawable/selector_radio</item>
+        <item name="android:textSize">@dimen/message_text_size</item>
+    </style>
+    >
+
+    <style name="TermsRule">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#3C3C3C</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:lineSpacingExtra">-6sp</item>
+        <item name="android:lines">4</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily">@font/kanit</item>
+        <item name="android:lineSpacingExtra">-5sp</item>
+        <item name="android:textColor">#130E0D</item>
+    </style>
+
+    <style name="ProgressBarHorizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/overflow</item>
+        <item name="android:progressTint">@color/overflow</item>
+    </style>
+
+    <style name="ProgressBarRound">
+        <item name="android:indeterminate">true</item>
+        <item name="android:elevation">3dp</item>
+        <item name="android:progressTint">@color/lightBlue</item>
+    </style>
+</resources>

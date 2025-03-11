@@ -1,0 +1,37 @@
+<!-- drawable/frame_5738.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="258dp"
+    android:height="112dp"
+    android:viewportWidth="258"
+    android:viewportHeight="112">
+    <group>
+        <clip-path android:pathData="M32 0H226C243.673 0 258 14.3269 258 32V80C258 97.6731 243.673 112 226 112H32C14.3269 112 0 97.6731 0 80V32C0 14.3269 14.3269 0 32 0Z" />
+        <group
+            android:pivotX="129"
+            android:pivotY="56"
+            android:rotation="51.434"
+            android:scaleX="3.053"
+            android:scaleY="21.29"
+            android:translateX="0.674"
+            android:translateY="-5.433">
+            <path android:pathData="M0 0V112H258V0">
+                <aapt:attr name="android:fillColor">
+                    <gradient
+                        android:endX="193.5"
+                        android:endY="56"
+                        android:startX="64.5"
+                        android:startY="56"
+                        android:type="linear">
+                        <item
+                            android:color="#E8E7E7"
+                            android:offset="0" />
+                        <item
+                            android:color="#A19F9F"
+                            android:offset="1" />
+                    </gradient>
+                </aapt:attr>
+            </path>
+        </group>
+    </group>
+</vector>

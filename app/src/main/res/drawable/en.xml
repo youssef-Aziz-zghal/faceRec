@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Background (Red Stripes) -->
+    <path android:fillColor="#B22234" android:pathData="M0,0h24v24H0z"/>
+
+    <!-- White Stripes -->
+    <path android:fillColor="#FFFFFF" android:pathData="M0,2h24v2H0z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M0,6h24v2H0z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M0,10h24v2H0z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M0,14h24v2H0z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M0,18h24v2H0z"/>
+
+    <!-- Blue Rectangle (Canton) -->
+    <path android:fillColor="#3C3B6E" android:pathData="M0,0h10v10H0z"/>
+
+    <!-- White Stars (Simplified) -->
+    <path android:fillColor="#FFFFFF" android:pathData="M1,1h1v1H1z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M3,1h1v1H3z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M5,1h1v1H5z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M7,1h1v1H7z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M9,1h1v1H9z"/>
+
+    <path android:fillColor="#FFFFFF" android:pathData="M2,2h1v1H2z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M4,2h1v1H4z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M6,2h1v1H6z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M8,2h1v1H8z"/>
+
+    <path android:fillColor="#FFFFFF" android:pathData="M1,3h1v1H1z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M3,3h1v1H3z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M5,3h1v1H5z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M7,3h1v1H7z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M9,3h1v1H9z"/>
+
+</vector>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#EB0000</color>
+    <color name="lightBlue">#FF8D98FF</color>
+
+    <color name="background">@color/white</color>
+    <color name="error">@color/red</color>
+    <color name="text">#130E0D</color>
+    <color name="sub_title">#3C3C3C</color>
+    <color name="overflow">#1D2DC2</color>
+    <color name="ic_launcher_background">#494E55</color>
+
+    <color name="blue_normal">#0087FF</color>
+    <color name="green_bright">#22DA3B</color>
+    <color name="blue_light">#A1ECEF</color>
+    <color name="orange">#f9af00</color>
+    <color name="green">#3CB043</color>
+</resources>

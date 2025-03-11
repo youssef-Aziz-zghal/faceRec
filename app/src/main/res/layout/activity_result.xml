@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.ResultActivity">
+
+
+    <TextView
+        android:id="@+id/result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result_title_enrollment_success"
+        android:theme="@style/TextViewTitleStyle" />
+
+    <ImageView
+        android:id="@+id/result_success"
+        android:layout_width="@dimen/result_image_size"
+        android:layout_height="@dimen/result_image_size"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@drawable/congrats" />
+
+
+    <ImageView
+        android:id="@+id/result_failure"
+        android:layout_width="@dimen/result_image_size"
+        android:layout_height="@dimen/result_image_size"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_warning"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/result_next"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/default_margin_horizontal"
+        android:text="@string/result_next"
+        android:theme="@style/Button" />
+
+</RelativeLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+tools:context=".ui.CaptureActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:stateListAnimator="@null">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/toolbar_margin_horizontal"
+            android:background="@color/transparent"
+            android:layoutDirection="rtl" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<LinearLayout
+    android:id="@+id/titleLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/WorkMessage"
+        style="@style/TextViewSubTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/WorkEnrollStart"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/guidanceStatic"
+        style="@style/TextViewGuidanceStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/guidanceDynamic"
+        style="@style/TextViewGuidanceStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/guidance_place_hand" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/progressBarLayout"
+    android:layout_below="@id/titleLayout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/placeHandView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_place_hand"
+                android:visibility="invisible" />
+
+
+            <ImageView
+                android:id="@+id/defautHandView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/enroll_hand"
+                android:visibility="invisible" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/moveAwayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="MoveFurther.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/moveRightView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="MoveRight.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/moveLeftView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="MoveLeft.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/moveCloserView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="MoveCloser.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/moveDownView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="MoveDown.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/moveUpView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="MoveTop.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/flattenHandView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="Flatten.json"
+                app:lottie_loop="true" />
+
+            <ImageView
+                android:id="@+id/dont_move_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/radio_on"
+                android:visibility="invisible"
+                app:tint="#0AE112" />
+
+            <ImageView
+                android:id="@+id/terminated_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/radio_on"
+                android:visibility="invisible"
+                app:tint="#2E86CA" />
+
+            <ImageView
+                android:id="@+id/hourglass_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_hourglass"
+                android:visibility="invisible"
+                app:tint="#2E86CA" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/progressBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginHorizontal="@dimen/progress_bar_margin_horizontal"
+    android:layout_marginTop="@dimen/default_margin_vertical"
+    android:layout_marginBottom="@dimen/default_margin_vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progressBarsWrapperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/progress_bar_margin_horizontal">
+
+        <ImageView
+            android:id="@+id/progressBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginVertical="@dimen/default_half_margin_vertical"
+            android:src="@android:drawable/progress_horizontal"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#A1ECEF" />
+
+        <ImageView
+            android:id="@+id/progressBarProgress"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginVertical="@dimen/default_half_margin_vertical"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".5"
+            app:srcCompat="@android:drawable/progress_horizontal"
+            app:tint="@color/green_bright" />
+
+        <ImageView
+            android:id="@+id/progressBarContent"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginVertical="@dimen/default_half_margin_vertical"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".25"
+            app:srcCompat="@android:drawable/progress_horizontal"
+            app:tint="@color/blue_normal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/circle_1"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue_normal" />
+
+    <TextView
+        android:id="@+id/circle_number_1"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        android:gravity="center"
+        android:text="@string/circle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue_normal" />
+
+    <ImageView
+        android:id="@+id/circle_2"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/green_bright" />
+
+    <TextView
+        android:id="@+id/circle_number_2"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        android:gravity="center"
+        android:text="@string/circle_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue_normal" />
+
+    <ImageView
+        android:id="@+id/circle_3"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue_light" />
+
+    <TextView
+        android:id="@+id/circle_number_3"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        android:gravity="center"
+        android:text="@string/circle_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue_normal" />
+
+    <ImageView
+        android:id="@+id/circle_4"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue_light" />
+
+    <TextView
+        android:id="@+id/circle_number_4"
+        android:layout_width="@dimen/capture_progress_bar_circle_size"
+        android:layout_height="@dimen/capture_progress_bar_circle_size"
+        android:gravity="center"
+        android:text="@string/circle_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="@color/blue_normal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

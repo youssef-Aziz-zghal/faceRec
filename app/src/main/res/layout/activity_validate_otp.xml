@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+tools:context=".ui.ValidateOtpActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:stateListAnimator="@null">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/toolbar_margin_horizontal"
+            android:background="@color/transparent"
+            android:layoutDirection="rtl" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<TextView
+    android:id="@+id/validate_otp_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/data_input_step"
+    android:theme="@style/TextViewSubTitleStyle" />
+
+<TextView
+    android:id="@+id/validate_otp_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/validate_otp_step"
+    android:gravity="top|center"
+    android:text="@string/validate_otp_title"
+    android:theme="@style/TextViewTitleStyle" />
+
+<ProgressBar
+    android:id="@+id/validate_otp_progress_bar"
+    style="@style/ProgressBarHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/progress_bar_height"
+    android:layout_below="@+id/validate_otp_title"
+    android:layout_marginHorizontal="@dimen/progress_bar_margin_horizontal"
+    android:visibility="invisible" />
+
+<TextView
+    android:id="@+id/validate_otp_phone_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/validate_otp_progress_bar"
+    android:layout_centerHorizontal="true"
+    android:gravity="center" />
+
+
+<in.aabhasjindal.otptextview.OtpTextView
+    android:id="@+id/validate_otp_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/validate_otp_phone_number"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/text"
+    app:bar_enabled="false"
+    app:bar_height="2dp"
+    app:box_margin_left="10dp"
+    app:height="50dp"
+    app:length="6"
+    app:otp="------"
+    app:otp_box_background="@drawable/edittext_otp_shape"
+    app:otp_text_size="20dp"
+    app:width="50dp"
+    tools:layout_editor_absoluteX="111dp" />
+
+<TextView
+    android:id="@+id/validate_otp_error"
+    style="@style/TextViewErrorMessageStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/validate_otp_resend"
+    android:layout_marginVertical="@dimen/error_margin_vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:text="@string/validate_otp_error"
+    android:visibility="invisible" />
+
+<Button
+    android:id="@+id/validate_otp_resend"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="@dimen/default_margin_horizontal"
+    android:text="@string/validate_otp_resend_otp_unavailable"
+    android:theme="@style/Button" />
+
+</RelativeLayout>

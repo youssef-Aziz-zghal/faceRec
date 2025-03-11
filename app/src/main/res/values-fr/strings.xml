@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">Appli inscription de référence</string>
+    <string name="confirm">Confirmer</string>
+    <string name="WorkEnrollStart">Inscription</string>
+    <string name="WorkUnEnrollStart">Désinscription</string>
+    <string name="EnrollOk">Vous avez été inscrit avec succès.</string>
+    <string name="auto_Start">Démarrage automatique</string>
+    <string name="menu_version">Version</string>
+    <string name="menu_quit">Quitter</string>
+    <string name="menu_un_enroll">Désinscription</string>
+    <string name="error_field_not_filled">Veuillez remplir tous les champs</string>
+    <string name="error_phone_number_already_associated">Le numero de telephone fourni est deja associe a un compte client</string>
+    <string name="error_unknown_phone_number">Le numero de telephone fourni ne correspond a aucun compte client existant</string>
+    <string name="toast_init_failed">Echec de l initialisation de la bibliotheque</string>
+    <string name="toast_select_tokenization_method">Veuillez choisir une methode de tokenisation</string>
+
+    <string name="toast_cancel_capture_failed">Echec de l annulation de la capture</string>
+    <string name="toast_cancel_capture_success">Capture annulee avec succes</string>
+    <string name="toast_send_otp_success">OTP envoye avec succes</string>
+
+    <string name="init_next">Initier</string>
+    <string name="init_title">Initialiser Librairie</string>
+    <string name="dialog_cancel">Annuler</string>
+    <string name="dialog_retry">Reessayer</string>
+    <string name="dialog_abort">Abandonner</string>
+    <string name="dialog_message_failed_enrollment_verification">L inscription a echoue en raison d une mauvaise capture.</string>
+    <string name="dialog_title_confirm_un_enroll">Confirmer desinscription</string>
+    <string name="dialog_message_confirm_un_enroll">Bonjour %s,\netes vous sur de vouloir vous desinscrire?\nCette action supprimera votre compte\net vos donnees de notre systeme.\nVeuillez confirmer si vous voulez continuer.</string>
+    <string name="dialog_title_cancel">Confirmation annulation</string>
+    <string name="dialog_title_terminate">Quitter application</string>
+    <string name="dialog_message_terminate">Etes vous sur de vouloir quitter?</string>
+    <string name="dialog_message_cancel">En cliquant sur retour a l ecran d accueil,\nvous finaliserez le processus,\net il sera reinitialise au debut.</string>
+    <string name="dialog_title_retry_enrollment">Reessayer inscription</string>
+    <string name="dialog_message_capture_canceled">La capture a echoue car elle a ete annulee.</string>
+    <string name="dialog_message_cancellation_ongoing">Annulation en cours...</string>
+
+    <string name="capture_guidance_un_enroll_processing">Desinscription en cours...</string>
+
+    <string name="guidance_static">Veuillez bouger votre main</string>
+    <string name="guidance_place_hand">Veuillez placer votre main\nau dessus du capteur</string>
+    <string name="guidance_remove_hand">Retirez votre main\npour continuer</string>
+    <string name="guidance_hand_down">vers vous</string>
+    <string name="guidance_hand_up">eloignez vous</string>
+    <string name="guidance_hand_left">vers la gauche</string>
+    <string name="guidance_hand_right">vers la droite</string>
+    <string name="guidance_hand_further">eloignez votre main du capteur</string>
+    <string name="guidance_hand_closer">rapprochez votre main du capteur</string>
+    <string name="guidance_flatten_hand">main a plat et parallele au capteur</string>
+    <string name="guidance_dont_move">Ne bougez pas.</string>
+    <string name="guidance_complete">Traitement des donnees...\nVous pouvez retirer votre main</string>
+
+    <string-array name="first_name_list">
+        <item>John</item>
+        <item>Jane</item>
+        <item>Sam</item>
+        <item>Alice</item>
+        <item>Bob</item>
+    </string-array>
+    <string-array name="last_name_list">
+        <item>Doe</item>
+        <item>Smith</item>
+        <item>Johnson</item>
+        <item>Wilson</item>
+        <item>Brown</item>
+    </string-array>
+
+
+    <string name="idle_title">Paiement par veine palmaire</string>
+    <string name="idle_next">Appuyez pour commencer</string>
+    <string name="welcome_title">Inscrivez vous</string>
+    <string name="welcome_validate_terms_conditions">Valider les conditions\nde service</string>
+    <string name="welcome_identify_yourself">Identifiez\nvous</string>
+    <string name="welcome_your_payment_card">Enregistrez votre\ncarte de paiement</string>
+    <string name="welcome_link_your_hand">Liez votre\nmain</string>
+    <string name="welcome_next">Embarquez moi</string>
+    <string name="terms_step">Etape 1</string>
+    <string name="terms_rule">En cliquant sur Je confirme, je confirme avoir lu et accepte les conditions de service disponibles via le QR code sur cet ecran.</string>
+    <string name="terms_next">Je confirme</string>
+    <string name="terms_title">Valider les conditions de service</string>
+    <string name="data_input_step">Etape 2</string>
+    <string name="data_input_title">Identifiez vous</string>
+    <string name="data_input_skip_otp">Passer OTP</string>
+    <string name="data_input_error_phone_number_invalid">Numero de telephone invalide</string>
+    <string name="data_input_hint_phone">Numero de telephone (format +indicatif**********)</string>
+    <string name="data_input_hint_first_name">Prenom</string>
+    <string name="data_input_hint_last_name">Nom</string>
+    <string name="validate_otp_title">Veuillez entrer l OTP\nrecu sur votre telephone.</string>
+    <string name="validate_otp_resend_otp_available">Renvoyer OTP</string>
+    <string name="validate_otp_resend_otp_unavailable">Renvoyer OTP %d s</string>
+    <string name="validate_otp_error">Echec de validation OTP. Veuillez verifier ou renvoyer le code.</string>
+    <string name="tokenization_step">Etape 3</string>
+    <string name="tokenization_method_title">Choisissez la methode de paiement\nque vous souhaitez tokeniser</string>
+    <string name="tokenization_method_emv">Tokenisation carte EMV</string>
+    <string name="tokenization_method_fidelity">Compte fidelite</string>
+    <string name="emv_title">Inserez ou approchez votre carte</string>
+    <string name="emv_step">Etape 3</string>
+    <string name="emv_retry">Reessayer</string>
+    <string name="fidelity_title">Scannez votre code fidelite</string>
+    <string name="fidelity_input">Code fidelite</string>
+    <string name="fidelity_next">Confirmer code fidelite</string>
+    <string name="fidelity_fill_field">Veuillez entrer le code fidelite</string>
+    <string name="result_title_enrollment_success">Tout est pret</string>
+    <string name="result_title_enrollment_duplicate">Il semble que nous vous connaissons deja!\nVous n etes pas inscrit</string>
+    <string name="result_title_enrollment_canceled">Inscription annulee\nVous n etes pas inscrit</string>
+    <string name="result_title_un_enrollment_success">Vous etes desinscrit</string>
+    <string name="result_title_un_enrollment_failure">Aucun utilisateur ne correspond a cette image de veine palmaire\nVous n etes pas desinscrit</string>
+    <string name="result_title_un_enrollment_canceled">Desinscription annulee\nVous n etes pas desinscrit</string>
+    <string name="result_next">Retour a l accueil</string>
+    <string name="un_enroll_title">Veuillez selectionner votre methode\nd authentification preferee</string>
+    <string name="un_enroll_step">Desinscription</string>
+    <string name="un_enroll_pvp_auth">Authentification par veine palmaire</string>
+    <string name="un_enroll_phone_auth">Authentification par telephone</string>
+    <string name="enroll">S inscrire</string>
+    <string name="un_enroll">Se desinscrire</string>
+    <string name="choose_enroll_un_enroll">Veuillez choisir : Inscription ou Desinscription</string>
+    <string name="understood">Compris</string>
+    <string name="accept">Accepter</string>
+    <string name="term_condition">Conditions de service</string>
+
+
+
+    <string name="un_enroll_processing">Le desinscription est en cours...</string>
+    <string name="enrollment">inscription</string>
+    <string name="un_enrollment">desinscription</string>
+    <string name="failed_capture_canceled">La capture a echoue car elle a ete annulee.</string>
+    <string name="failed_capture_not_recognized">La capture a echoue car la main non reconnue.</string>
+    <string name="un_enrollment_canceled">Le processus de desinscription a ete annule.</string>
+    <string name="alert_dialog_message">Envoi des donnees, veuillez patienter...</string>
+    <string name="step_success">Capture reussie</string>
+
+    <string name="circle_1">1</string>
+    <string name="circle_2">2</string>
+    <string name="circle_3">3</string>
+    <string name="circle_4">4</string>
+    <string name="title_activity_term_condition">ConditionTermActivity</string>
+    <string name="first_fragment_label">Premier Fragment</string>
+    <string name="second_fragment_label">Deuxieme Fragment</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Precedent</string>
+
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="lorem_ipsum_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper, justo ut vestibulum tristique, massa ligula fermentum tellus, sed luctus ligula justo ut diam. Sed ultricies dapibus sapien, id facilisis libero venenatis vel. In hac habitasse platea dictumst. Fusce euismod aliquet massa, vitae ullamcorper elit elementum nec. Nunc euismod hendrerit odio vel euismod. Suspendisse potenti. Phasellus ut dolor vestibulum, bibendum felis vel, vestibulum mauris. Integer eget dapibus ex. Sed tincidunt augue vitae efficitur cursus. Proin consectetur quam nec dolor lacinia vestibulum. Nullam nec lectus a arcu fermentum convallis. Phasellus efficitur est eget justo iaculis, vel cursus tellus efficitur.
+    </string>
+    <string name="english">Anglais</string>
+    <string name="spanish">Espagnol</string>
+    <string name="french">Français</string>
+
+    <string name="open">ouvrir</string>
+    <string name="close">Fermer</string>
+    <string name="button_camera">Camera</string>
+    <string name="button_gallery">Gallerie</string>
+    <string name="button_close">Fermer</string>
+    <string name="button_hq_off">HQ Off</string>
+    <string name="button_hq_on">HQ On</string>
+
+    <string name="enrollement_user_camera">Inscription utilisateur</string>
+    <string name="cancel_detection_camera">Annuler la détection</string>
+    <string name="unerollment_user_camera">Désinscription de utilisateur</string>
+    <string name="no_face_detected_camera">Aucun visage détecté</string>
+    <string name="quality_too_low_center_your_face">Qualité trop basse, centrez votre visage</string>
+    <string name="ready_to_save_face_embedding">Prêt à enregistrer lempreinte faciale</string>
+    <string name="face_embedding_saved">Empreinte faciale enregistrée</string>
+    <string name="error_saving_face_embedding">Erreur lors de lenregistrement de lempreinte faciale</string>
+
+</resources>
+

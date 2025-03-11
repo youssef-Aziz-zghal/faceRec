@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+tools:context=".ui.FidelityAccountActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:stateListAnimator="@null">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/toolbar_margin_horizontal"
+            android:background="@color/transparent"
+            android:layoutDirection="rtl" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<TextView
+    android:id="@+id/fidelity_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:text="@string/tokenization_step"
+    android:theme="@style/TextViewSubTitleStyle" />
+
+<TextView
+    android:id="@+id/fidelity_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/fidelity_step"
+    android:text="@string/fidelity_title"
+    android:theme="@style/TextViewTitleStyle" />
+
+
+<ProgressBar
+    android:id="@+id/fidelity_progress_bar"
+    style="@style/ProgressBarHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/progress_bar_height"
+    android:layout_below="@+id/fidelity_step"
+    android:layout_marginHorizontal="@dimen/progress_bar_margin_horizontal"
+    android:visibility="invisible" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/fidelity_input_layout"
+    style="@style/NoUnderlineTextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text_input_height"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="@dimen/text_input_marginHorizontal"
+    android:hint="@string/fidelity_input">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fidelity_input"
+        style="@style/TextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:imeOptions="actionDone"
+        android:inputType="phone" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<TextView
+    android:id="@+id/fidelity_error"
+    style="@style/TextViewErrorMessageStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/fidelity_next"
+    android:layout_marginBottom="@dimen/default_margin_vertical" />
+
+<Button
+    android:id="@+id/fidelity_next"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="@dimen/default_margin_horizontal"
+    android:text="@string/fidelity_next"
+    android:theme="@style/Button" />
+
+</RelativeLayout>
